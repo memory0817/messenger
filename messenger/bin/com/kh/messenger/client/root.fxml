@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="10" prefHeight="408.0" prefWidth="250" style="-fx-background-color: F4B6CA;" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kh.messenger.client.RootController">
+
+	<padding>
+
+		<Insets bottom="5.0" left="15.0" right="5.0" top="15.0" />
+
+	</padding>
+
+ 
+
+ 
+
+ 
+
+ 
+
+<!-- 로그인값을 안주면 디폴트로 0행0열에 들어가게된다. -->
+
+	<children>
+
+		<ImageView fitHeight="200" fitWidth="300" GridPane.columnSpan="2">
+
+			<image>
+
+				<Image url="@img/이미지2.jpg" />
+
+			</image>
+
+		</ImageView> 
+
+		<Label alignment="CENTER" styleClass="lblClass" text="   아이디" GridPane.rowIndex="1" />
+
+		<TextField fx:id="id" promptText="이메일을 입력하세요." GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+
+		<Label styleClass="lblClass" text="  비밀번호" textAlignment="CENTER" GridPane.rowIndex="2" />
+
+		<PasswordField fx:id="pw" promptText="비밀번호를 입력하세요." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+		<HBox alignment="center" spacing="20" GridPane.columnSpan="2" GridPane.rowIndex="3">
+
+			<children>
+
+				<Button fx:id="login" text="로그인" textFill="WHITE" />
+
+				<Button fx:id="cancel" text="취소" textFill="WHITE" />				
+
+			</children>
+
+		</HBox>
+
+		<HBox alignment="center" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="2">
+
+		<Label id="lblMsg" fx:id="msg">
+
+            <opaqueInsets>
+
+               <Insets />
+
+            </opaqueInsets>
+
+            <HBox.margin>
+
+               <Insets />
+
+            </HBox.margin></Label>
+
+         <GridPane.margin>
+
+            <Insets top="15.0" />
+
+         </GridPane.margin> 
+
+		</HBox>
+
+      <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.rowIndex="10">
+
+         <children>
+
+            <Label onMouseClicked="#searchId" styleClass="lblClass2" text="아이디찾기" />
+
+            <Label onMouseClicked="#searchPw" styleClass="lblClass2" text="비밀번호찾기" />
+
+            <Label onMouseClicked="#doMemjoin" styleClass="lblClass2" text="회원가입" />
+
+         </children>
+
+      </HBox>
+
+		
+
+		
+
+		
+
+	</children>
+
+   <columnConstraints>
+
+      <ColumnConstraints />
+
+      <ColumnConstraints />
+
+      <ColumnConstraints />
+
+   </columnConstraints>
+
+   <rowConstraints>
+
+      <RowConstraints />
+
+      <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+      <RowConstraints />
+
+   </rowConstraints>
+
+</GridPane>

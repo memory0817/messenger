@@ -1,0 +1,80 @@
+/*@charset "UTF-8";*/
+/* 전체 label */ 
+/*Label {
+	-fx-padding:5; 
+	-fx-background-color:blue;
+	-fx-text-fill:white;
+}*/
+
+Label.lblClass {
+	-fx-padding:5; 
+/*	-fx-background-color:C34B71;*/
+	-fx-text-fill:D46D8E;
+	-fx-font-weight:bold;
+}
+
+
+Label.lblClass2 {
+	-fx-padding:5; 
+	-fx-background-color:D46D8E;
+	-fx-text-fill:white;
+	-fx-border-color:#ffffff;
+	-fx-border-width:1,1;
+}
+
+#lblMsg {
+	
+	-fx-padding:10; 
+	-fx-font-size:12pt;
+	-fx-font-family:"나눔바른고딕";
+	-fx-text-fill:C34B71;
+/* 	-fx-font-weight:light; */
+	-fx-font-style:italic;
+}
+
+
+/* 전체 button */
+Button {
+	
+	
+	-fx-background-color:E85B88;
+	-fx-text-fill:white;
+	
+}
+
+Button:hover {
+	
+	
+	-fx-background-color:D6DCFA;
+	-fx-text-fill:F4B6CA;
+	
+}
+
+Button:focused {
+	
+	
+	-fx-background-color:skyblue;
+	-fx-text-fill:red;
+	
+}
+
+PasswordField {
+		-fx-prompt-text-fill:linear-gradient(FBD9E3 , b0e0e6);
+	-fx-background-color:white;
+	-fx-border-color:ED2766;
+	
+}
+
+PasswordField:focused {
+
+	
+/* 	-fx-background-color:yellow;
+	-fx-text-fill:skyblue;*/
+	
+}
+
+TextField{
+	-fx-prompt-text-fill:linear-gradient(FBD9E3 , b0e0e6);
+	-fx-background-color:white;
+	-fx-border-color:ED2766;
+}

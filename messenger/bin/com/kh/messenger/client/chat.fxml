@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1">
+	<top>
+		<ToolBar>
+			<items>
+			
+				<Button text="저장"/>
+				<Button text="닫기"/>
+				<Label text="입력한 문자를 아래 입력하세요!"/>
+				
+			
+			
+			</items>
+		
+		
+		
+		</ToolBar>
+	
+	
+	</top>
+	
+	<center>
+		<TextArea />
+	</center>
+	<bottom>
+		<BorderPane>
+			<center>
+				<TextField/>
+			</center>
+			<right>
+				<Button text="전송"/>
+			</right>
+		</BorderPane>
+	
+	</bottom>
+</BorderPane>
+

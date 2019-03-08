@@ -1,0 +1,14 @@
+/* @charset "UTF-8"; */
+
+
+Label{
+	-fx-font-family:"나눔고딕";
+	
+}
+
+Label.title {
+	-fx-font-family:"나눔고딕";
+	-fx-font-size:14pt;
+}
+
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kh.messenger.client.MessengerMainController">
+	<top>
+		<VBox prefHeight="56.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+			<children>
+				<MenuBar>
+					<menus>
+						<Menu mnemonicParsing="false" text="파일">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#handleMessengerExit" text="로그아웃" >
+								<accelerator>
+									<KeyCodeCombination alt="UP" code="Q" control="UP" meta="UP" shift="DOWN" shortcut="UP" />
+								</accelerator>		
+								</MenuItem>
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="기능">
+							<items>
+								<MenuItem mnemonicParsing="false" text="친구찾기">
+								<graphic>
+										<ImageView>
+											<image>
+												<Image preserveRatio="false" requestedHeight="20" requestedWidth="20" smooth="true" url="@img/3.png" />
+											</image>
+										</ImageView>
+									</graphic>								
+								</MenuItem>
+								<MenuItem mnemonicParsing="false" onAction="#handleAddFriend" text="친구등록">
+								<accelerator>
+									<KeyCodeCombination alt="UP" code="N" control="UP" meta="UP" shift="DOWN" shortcut="UP" />
+								</accelerator>
+									<graphic>
+										<ImageView>
+											<image>
+												<Image preserveRatio="false" requestedHeight="20" requestedWidth="20" smooth="true" url="@img/1.png" />
+											</image>
+										</ImageView>
+									</graphic>
+								</MenuItem>
+								<MenuItem mnemonicParsing="false" text="친구삭제">
+								<graphic>
+										<ImageView>
+											<image>
+												<Image preserveRatio="false" requestedHeight="20" requestedWidth="20" smooth="true" url="@img/4.png" />
+											</image>
+										</ImageView>
+									</graphic>		
+								</MenuItem>
+								
+								
+								<!-- <SeparatorMenuItem /> -->
+								
+							</items>
+							</Menu>
+							<Menu mnemonicParsing="false" text="내정보">
+								<items>
+									<MenuItem mnemonicParsing="false" text="회원수정" />
+								</items>
+							</Menu>
+							<Menu mnemonicParsing="false" text="Help">
+								<items>
+									<MenuItem mnemonicParsing="false" text="About" />
+								</items>
+							</Menu>
+					</menus>
+				</MenuBar>
+				<ToolBar prefHeight="19.0" prefWidth="250.0">
+					<items>
+						<Button mnemonicParsing="false" onAction="#handleSearchFriend" prefHeight="23.0" prefWidth="42.0">
+						<graphic>
+										<ImageView>
+											<image>
+												<Image preserveRatio="false" requestedHeight="20" requestedWidth="20" smooth="true" url="@img/3.png" />
+											</image>
+										</ImageView>
+									</graphic>		
+								</Button>	
+						<Button mnemonicParsing="false" onAction="#handleAddFriend" prefHeight="23.0">
+									<graphic>
+										<ImageView>
+											<image>
+												<Image preserveRatio="false" requestedHeight="20" requestedWidth="20" smooth="true" url="@img/1.png" />
+											</image>
+										</ImageView>
+									</graphic>						
+						</Button>
+						<Button mnemonicParsing="false" onAction="#handleDeleteFriend" prefHeight="23.0">
+									<graphic>
+										<ImageView>
+											<image>
+												<Image preserveRatio="false" requestedHeight="20" requestedWidth="20" smooth="true" url="@img/4.png" />
+											</image>
+										</ImageView>
+									</graphic>						
+						</Button>
+						<Button mnemonicParsing="false" onAction="#handleMessengerExit" prefHeight="23.0">
+									<graphic>
+										<ImageView>
+											<image>
+												<Image preserveRatio="false" requestedHeight="20" requestedWidth="20" smooth="true" url="@img/5.png" />
+											</image>
+										</ImageView>
+									</graphic>		
+						</Button>
+					</items>
+				</ToolBar>
+			</children>
+		</VBox>
+	</top>
+	<bottom>
+		<HBox prefHeight="32.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+	</bottom>
+	<center>
+		<TreeView fx:id="tree" prefHeight="273.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+	</center>
+</BorderPane>
