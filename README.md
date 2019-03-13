@@ -23,3 +23,6 @@
 - 친구삭제<br>
 - 친구찾기<br>
 - p2p 대화하기<br> 
+
+# 사용예제
+[동영상시연](https://youtu.be/naazH8G1wG0)
