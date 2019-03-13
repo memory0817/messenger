@@ -1,2 +1,2 @@
 # messenger
-##![Alt text](/path/to/img.jpg)
+##![Alt text](/path/to/img/messenger.png)
