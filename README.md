@@ -11,7 +11,7 @@
 - JDK 1.7
 - Java 8
 
-# 화면구성
+> Front-End
 - JavaFX
 - Scene Builder
 
